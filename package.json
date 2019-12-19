@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/imvsharma/auth0-graphql-server/issues"
   },
-  "homepage": "https://github.com/imvsharma/auth0-graphql-server#readme"
+  "homepage": "https://github.com/imvsharma/auth0-graphql-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "graphql": "^14.5.8"
+  }
 }
