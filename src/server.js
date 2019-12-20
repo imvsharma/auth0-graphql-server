@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema.js');
@@ -7,7 +8,7 @@ const resolvers = {
 };
 
 const app = express();
-
+require('../lib/database')();
 app.use("/graphql", graphqlHTTP({schema, rootValue: resolvers}));
 
 app.listen(4000);
